@@ -1,5 +1,6 @@
 import bpy
 import math
+import sys
 
 from bpy.props import StringProperty, EnumProperty, IntProperty
 from queue import PriorityQueue
@@ -63,8 +64,8 @@ class ArrangeObjectsOnGrid(bpy.types.Operator):
             o = objects.get()[1].object
             if o.dimensions is None:
                 continue
-                
-            o.location = (next_x, next_y + o.dimensions.y, 0)
+            
+            o.location = (next_x, next_y + o.dimensions.y, 0.0)
             
             column_max = max(column_max, o.dimensions.x)
             next_y += o.dimensions.y + self.margin

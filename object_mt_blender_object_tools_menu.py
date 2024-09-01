@@ -1,7 +1,7 @@
 import bpy
 
 class OBJECT_MT_BlenderObjectToolsMenu(bpy.types.Menu):
-    bl_label = "Blender Object tools"
+    bl_label = "Blender Object Tools"
     bl_idname = "OBJECT_MT_BlenderObjectToolsMenu"
 
     @classmethod

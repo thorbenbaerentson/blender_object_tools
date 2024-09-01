@@ -9,6 +9,8 @@
 This extension contains operators that should help managing objects in bulk.
 
 # Operators
+All operators can be found under Objects :arrow_right: Blender Object Tools under the 'Layout' tab. Keep in mind, that at least on object has to be selected in order for the operators to work.
+
 ## Arrange Objects On Grid
 This operator uses a simple heuristic to arrange all selected objects on a plane taking with and height of the objects into account. This should arrange all objects so that there are almost no overlapping objects. The origin of the plane is always the scene origin. 
 
@@ -19,3 +21,4 @@ Think of adding a property called 'Collider' to all objects and setting it to tr
 
 # Known Issues
 - The menu item 'Asset Tools' should be grayed out when no object is selected. However, implementing 'poll' for a menu object does not seam to suffice in order to achive it.  
+- The objects are not move exactly to the origin, there is still an offset. 
