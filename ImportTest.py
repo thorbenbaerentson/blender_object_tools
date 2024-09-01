@@ -1,1 +1,0 @@
-print("If you can read this file, importing a module from the source directory to the current project worke.")

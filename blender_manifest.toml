@@ -2,10 +2,10 @@ schema_version = "1.0.0"
 
 # Example of manifest file for a Blender extension
 # Change the values according to your extension
-id = "mark_selected_objects_as_asset"
+id = "tb_object_tools"
 version = "1.0.0"
-name = "Mark Selected Objects As Asset"
-tagline = "Marks all selected objects as asset and then generate the asset browser preview."
+name = "TB Object Tools"
+tagline = "This addon contains several operators that make managing objects more productiv"
 maintainer = "Thorben Baerentson"
 # Supported types: "add-on", "theme"
 type = "add-on"
@@ -15,7 +15,7 @@ type = "add-on"
 
 # Optional list defined by Blender and server, see:
 # https://docs.blender.org/manual/en/dev/advanced/extensions/tags.html
-tags = ["Object", "Pipeline", "Development"]
+tags = ["Object"]
 
 blender_version_min = "4.0.0"
 # # Optional: Blender version that the extension does not support, earlier versions are supported.
