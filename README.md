@@ -9,10 +9,10 @@
 This extension contains operators for Blender that help managing objects in bulk.
 
 # Operators
-All operators can be found under Objects :arrow_right: Blender Object Tools under the 'Layout' tab. Keep in mind, that at least on object has to be selected in order for the operators to work.
+All operators can be found under Objects :arrow_right: Blender Object Tools in the 'Layout' tab. Keep in mind, that at least one object has to be selected in order for the operators to work.
 
 ## Arrange Objects On Grid
-This operator uses a simple heuristic to arrange all selected objects on a plane taking with and height of the objects into account. This should arrange all objects so that there are almost no overlapping objects. The origin of the plane is always the scene origin. 
+This operator uses a simple heuristic to arrange all selected objects on a plane taking with and height of the objects into account. This should arrange all objects so that there are no overlapping objects. The origin of the plane is always the scene origin. 
 
 ## Add property to selected
 Takes a property name and value and adds this property value on all selected objects. Properties can be added to the object or the data tab. Property values will be exported alongside the object if blender exports .glft or .glb files. Game engines like [Bevy](https://bevyengine.org/) import these property values when loading .gltfs (see [Load gltf extras](https://bevyengine.org/examples/3d-rendering/load-gltf-extras)). This enables us to pump data from Blender to a game engine. 
