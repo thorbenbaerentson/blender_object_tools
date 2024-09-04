@@ -6,7 +6,7 @@
 - [Known Issues](#known-issues)
 
 # Blender Object Tools
-This extension contains operators for Blender that help managing objects in bulk.
+This extension contains operators for Blender that help manage objects in bulk.
 
 # Operators
 All operators can be found under Objects :arrow_right: Blender Object Tools in the 'Layout' tab. Keep in mind, that at least one object has to be selected in order for the operators to work.
