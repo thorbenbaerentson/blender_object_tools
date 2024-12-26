@@ -19,6 +19,10 @@ class OBJECT_MT_BlenderObjectToolsMenu(bpy.types.Menu):
         layout.operator(
                 "object.add_property_to_selected", 
                 text = "Add property to selected")
+        
+        layout.operator(
+                "object.change_material_on_selected", 
+                text = "Change material on selected")
 
 def draw_menu(self, context):
     self.layout.menu(OBJECT_MT_BlenderObjectToolsMenu.bl_idname)

@@ -37,6 +37,7 @@ modulesNames = [
     'arrange_objects_on_grid',
     'add_property_to_selected',
     'object_mt_blender_object_tools_menu',
+    'set_material_on_selected',
 ]
 
 # Get the full name for each module and append it to modulesFullNames ...
