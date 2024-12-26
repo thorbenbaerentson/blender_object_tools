@@ -3,6 +3,7 @@
 - [Operators](#operators)
     - [Arrange Objects On Grid](#arrange-objects-on-grid)
     - [Add property to selected](#add-property-to-selected)
+    - [Change material on selected](#change-material-on-selected)
 - [Known Issues](#known-issues)
 
 # Blender Object Tools
@@ -18,6 +19,9 @@ This operator uses a simple heuristic to arrange all selected objects on a plane
 Takes a property name and value and adds this property value on all selected objects. Properties can be added to the object or the data tab. Property values will be exported alongside the object if blender exports .glft or .glb files. Game engines like [Bevy](https://bevyengine.org/) import these property values when loading .gltfs (see [Load gltf extras](https://bevyengine.org/examples/3d-rendering/load-gltf-extras)). This enables us to pump data from Blender to a game engine. 
 
 Think of adding a property called 'Collider' to all objects and setting it to true for all objects, that should serve as a collider. When loading a .gltf you could replace all of objects with a physics object, if the 'Collider' value is true and use a regular mesh renderer if not. This opens up almost infinite possibilities to interact with a game engine from Blender. Actually this should enable us to turn Blender into a Level Editor for engines like [Bevy](https://bevyengine.org/).
+
+## Change material on selected
+This operator allows the user to change a material on all selected meshes to a specific one. The material must be created before hand and can be selected on calling the operator. This is helpful for bulk editing.
 
 # Known Issues
 - The menu item 'Asset Tools' should be grayed out when no object is selected. However, implementing 'poll' for a menu object does not seam to suffice in order to achive it.  
