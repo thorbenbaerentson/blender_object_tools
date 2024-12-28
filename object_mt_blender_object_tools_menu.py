@@ -23,6 +23,14 @@ class OBJECT_MT_BlenderObjectToolsMenu(bpy.types.Menu):
         layout.operator(
                 "object.change_material_on_selected", 
                 text = "Change material on selected")
+    
+        layout.operator(
+                "object.change_object_name_to_mesh_name", 
+                text = "Change object name to mesh name")
+        
+        layout.operator(
+                "object.export_scene_to_bevy", 
+                text = "Export to bevy")
 
 def draw_menu(self, context):
     self.layout.menu(OBJECT_MT_BlenderObjectToolsMenu.bl_idname)

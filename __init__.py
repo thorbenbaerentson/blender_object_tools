@@ -38,6 +38,8 @@ modulesNames = [
     'add_property_to_selected',
     'object_mt_blender_object_tools_menu',
     'set_material_on_selected',
+    'change_object_name_to_mesh_name',
+    'export_scene_to_bevy',
 ]
 
 # Get the full name for each module and append it to modulesFullNames ...
